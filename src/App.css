@@ -1,0 +1,215 @@
+body {
+  /* font-family: Arial, sans-serif; d */
+  margin: auto;
+  font-family: 'Ubuntu';
+  color: #313c4e;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.personal-info-container {
+  width: 100%;
+  border-bottom: 3px solid black;
+}
+
+.personal-info {
+  width: 90%;
+  margin: auto;
+  /* margin-right: 5%; */
+}
+
+.summary{
+  font-size: 12px;
+}
+
+.section-container {
+  width: 100%;
+  margin-top: 1%;
+}
+
+.section {
+  width: 90%;
+  margin-right: 5%;
+}
+
+.job-title {
+  width: 60%;
+  margin-right: 10%;
+
+}
+
+.job-title > h1 {
+  color: #313c4e;
+  font-weight: 400;
+  font-size: 40px !important;
+  line-height: 42px !important;
+  margin: 10px 0px;
+}
+
+.job-title > p {
+  font-size: 20px !important;
+  line-height: 22px !important;
+  color: #449399;
+  margin: 0px;
+}
+
+.job-title > p {
+  font-size: 14px !important;
+  line-height: 16px !important;
+  margin: 0px;
+  margin-top: 1%;
+}
+
+.contact-info {
+  width: 30%;
+  text-align: left;
+  color: #000;
+  margin: auto;
+  font-size: 12px;
+}
+
+.section-title {
+  font-size: 28px !important;
+  line-height: 30px !important;
+  font-weight: bolder;
+  margin: 2% 5% 0% 5%;
+  font-family: "Ubuntu-Regular" !important;
+  border-bottom: 2px solid #313c4e;
+  padding-bottom: 1%;
+}
+
+.experience > p {
+  font-size: 24px !important;
+  line-height: 26px !important;
+  margin: 0px;
+  font-weight: 400;
+  font-family: "Ubuntu-Regular" !important;
+}
+
+.experience > div > h4 {
+  font-size: 20px !important;
+  line-height: 22px !important;
+  margin: auto 1% auto 0%;
+  font-family: "Ubuntu" !important;
+  font-weight: 200;
+  /* text-align: center; */
+  width: 60%;
+  text-align: left;
+}
+
+.experience > h5 {
+  font-size: 12px;
+  /* line-height: 14px !important; */
+  margin: 0px;
+  font-family: "Ubuntu" !important;
+  font-weight: 200;
+  color: #449399;
+}
+
+.left-points {
+  width: 5%;
+  height: inherit;
+  /* background-color: red; */
+}
+
+.resume-body {
+  width: 90%;
+  margin-right: 5%;
+}
+
+.work-period  {
+  margin: 0% 0%;
+  color: #449399;
+  font-size: 12px;
+  text-align: center;
+}
+
+.contact{
+  margin: 0px;
+  font-size: 12px;
+  color: #449399;
+}
+
+.contact > p:first {
+  color: #449399;
+}
+
+.box-point {
+  height: inherit;
+  width: 80%;
+  height: 40px;
+  background-color: #449399;
+  margin-top: 10%;
+}
+
+.dark-box {
+  background-color: #313c4e;
+}
+
+.blue-box {
+  background-color: #037fa1;
+}
+
+.section > ul {
+  margin: 0px 2%;
+  padding: 0px;
+  font-size: 14px;
+}
+
+.technical-skill-container {
+  width: 50%;
+}
+
+.technical-skill-container > div > p {
+  margin: 0px;
+  font-size: 12px;
+}
+
+.skill-title {
+  margin: 2% 0% !important;
+  font-weight: bold;
+  font-size: 14px !important;
+}
+
+.personal-projects > div > div > ul {
+  color: #449399;
+}
+
+.personal-projects > div > div > ul > li {
+  color: #313c4e;
+}
+
+.my-logo-container {
+  display: flex; /* Use flexbox to align items in a row */
+  align-items: center; /* Center items vertically */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  margin-bottom: 1%;
+}
+
+.my-logo {
+  width: 7%;
+  margin: 0; /* Remove any margin around the image */
+  padding: 0; /* Remove any padding around the image */
+  display: inline-block; /* Ensure the image remains inline */
+  padding: 2%;
+}
+
+.my-logo-text {
+  width: 93%;
+  margin: 0; /* Remove any margin around the text */
+  padding: 0; /* Remove any padding around the text */
+  display: inline-block; /* Ensure the text remains inline */
+}
+
+.work-description {
+  font-size: 13px;
+}
+
+.missing_info {
+  font-size: 1px;
+  color: #fff;
+}
