@@ -7,7 +7,7 @@ const Portfolio = (props) => {
     const highlight = {'background-color':'red','color':'white'}
     const shouldHilight = props.Technologies.Ishighlight
 
-    console.log("proips", props.Technologies)
+    // console.log("proips", props.Technologies)
 
     const CreateSkillSet = (skillArr, start, end) => {
 
@@ -83,7 +83,7 @@ const Portfolio = (props) => {
               <label htmlFor="phone-number">
                 <div className="my-logo-container">
                   <img className="my-logo" src="Assets/phone-call.png" alt="Phone" />
-                  <p id="phone-number" className="my-logo-text">+31 687024133</p>
+                  <p id="phone-number" className="my-logo-text">+31 0687024133</p>
                 </div>
               </label>
               <label htmlFor="location">
@@ -132,7 +132,7 @@ const Portfolio = (props) => {
                 Developed a full stack application to enhance English skills through reading, writing, listening, and
                 speaking modules in <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainFrontEnd)}</span>. Implemented interactive quizzes for reading and listening, real-time text
                 highlighting for writing using WebSockets, and a custom speech analysis algorithm for speaking. The
-                application was built with a  <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainFrontEnd)}</span> front-end, <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainBackEnd)}</span> back-end for API handling, and <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainBackEnd)}</span> with
+                application was built with a  <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainFrontEnd)}</span> front-end, <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainBackEnd)}</span> backend for API handling, and <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainBackEnd)}</span> with
                 RabbitMQ for asynchronous data processing.
               </div>
               <h5>Tasks</h5>
@@ -158,12 +158,13 @@ const Portfolio = (props) => {
                   from the <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainBackEnd,1,1)}</span> web server.
                 </li>
               </ul>
-
-              <div className="contact row">
-                <p>Contact -</p>
-                <p>&nbsp; Shankara Chilkunda(CEO) -</p>
-                <p>&nbsp; shankar@netanalytiks.com</p>
-              </div>
+              <label htmlFor="contact-1">
+                <div className="contact row">
+                  <p>Contact -</p>
+                  <p id="contact-1">&nbsp; Shankara Chilkunda(CEO) -</p>
+                  <p>&nbsp; shankar@netanalytiks.com</p>
+                </div>
+              </label>
             </div>
           </div>
 
@@ -206,11 +207,13 @@ const Portfolio = (props) => {
                 <li>Managed time-sensitive updates, including content changes and database upgrades</li>
               </ul>
 
-              <div className="contact row">
-                <p>Contact -</p>
-                <p>&nbsp; Shankara Chilkunda(CEO) -</p>
-                <p>&nbsp; shankar@netanalytiks.com</p>
-              </div>
+              <label htmlFor="contact-1">
+                <div className="contact row">
+                  <p>Contact -</p>
+                  <p id="contact-1">&nbsp; Shankara Chilkunda(CEO) -</p>
+                  <p>&nbsp; shankar@netanalytiks.com</p>
+                </div>
+              </label>
             </div>
           </div>
 
@@ -239,16 +242,19 @@ const Portfolio = (props) => {
                   Developed a Windows application using #C and .NET to add real-time analysis features to Microsoft Word.
                 </li>
                 <li>
-                  Enhanced performance of <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.otherBackEnd,0,1)}</span> applications by incorporating multi-threading techniques, resulting in a
+                  Enhanced performance of <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.OtherBackEnd,0,1)}</span> applications by incorporating multi-threading techniques, resulting in a
                   50% reduction in processing time.
                 </li>
               </ul>
 
-              <div className="contact row">
-                <p>Contact -</p>
-                <p>&nbsp; Lakshminarayana Ullala(COO) -</p>
-                <p>&nbsp; laks@netanalytiks.com</p>
-              </div>
+              
+              <label htmlFor="contact-1">
+                <div className="contact row">
+                  <p>Contact -</p>
+                  <p>&nbsp; Lakshminarayana Ullala(COO) -</p>
+                  <p>&nbsp; laks@netanalytiks.com</p>
+                </div>
+              </label>
             </div>
           </div>
 
@@ -270,7 +276,7 @@ const Portfolio = (props) => {
               <h5>Tasks</h5>
               <ul>
                 <li>
-                  Developed a web scraping tool to gather and store real-time data from over 30 government websites using <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.otherBackEnd, 0, 1)}</span>.
+                  Developed a web scraping tool to gather and store real-time data from over 30 government websites using <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.OtherBackEnd, 0, 1)}</span> as the backend.
                 </li>
                 <li>
                   Aggregated and organized collected data using <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.DBTechnologies)}</span> for visualization and reporting purposes, resulting in improved accessibility to information.
@@ -351,14 +357,14 @@ const Portfolio = (props) => {
                                
                                 <div>
                                     <p className='skill-title'>DevOps Technologies</p>
-                                    <p><span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainDevOpsTools.concat(props.Technologies.otherDevOpsTools))}</span></p>
+                                    <p><span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainDevOpsTools.concat(props.Technologies.OtherDevOpsTools))}</span></p>
                                 </div>
                             </div>
 
                             <div className="technical-skill-container">
                                 <div>
-                                    <p className='skill-title'>Server-Side Languages</p>
-                                    <p><span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainBackEnd.concat(props.Technologies.otherBackEnd))}</span></p>
+                                    <p className='skill-title'>Backend Languages</p>
+                                    <p><span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainBackEnd.concat(props.Technologies.OtherBackEnd))}</span></p>
                                 </div>
 
                                 <div>
@@ -368,7 +374,7 @@ const Portfolio = (props) => {
 
                                 <div>
                                     <p className='skill-title'>Others</p>
-                                    <p><span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.otherLanguages)}</span></p>
+                                    <p><span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.OtherLanguages)}</span></p>
                                 </div>
                             </div>
                         </div>

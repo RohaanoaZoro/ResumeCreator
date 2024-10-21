@@ -74,10 +74,16 @@ export default function SettingsPop({ Technologies, setTechnologies }) {
 
   useEffect(() => {
     const handleKeyDown = (event) => {
-        event.preventDefault();
+
         if (event.key === 'Escape') {
+            event.preventDefault();
             handleClickOpen(); // Open dialog when Esc key is pressed
         }
+
+        if ((event.metaKey || event.ctrlKey) && event.key === 'p') {
+          event.preventDefault(); // Prevent the default print dialog from opening
+          window.print();
+      }
     };
 
     document.addEventListener('keydown', handleKeyDown);
@@ -213,8 +219,8 @@ export default function SettingsPop({ Technologies, setTechnologies }) {
 
                     <TabPanel value="4">
                         <TransferJobs 
-                            leftList={otherCloud.current} 
-                            rightList={mainCloud.current} 
+                            leftList={otherDevOpsTools.current} 
+                            rightList={mainDevOpsTools.current} 
                             type={4}
                             updateLists={updateLists} // Passing callback
                             />
