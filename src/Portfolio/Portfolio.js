@@ -63,10 +63,10 @@ const Portfolio = (props) => {
               <p>Full Stack Developer</p>
               <label htmlFor="summary">
                 <p id="summary" className="summary">
-                  Enterprising and solution-oriented developer with over 4 years of experience specializing in <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainFrontEnd.concat(props.Technologies.MainBackEnd).concat(props.Technologies.MainCloud))}</span>. Skilled in developing
+                  Enterprising and solution-oriented developer with over 5 years of experience specializing in <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainFrontEnd.concat(props.Technologies.MainBackEnd).concat(props.Technologies.MainCloud))}</span>. Skilled in developing
                   innovative cloud-based applications using modern web technologies, with a strong focus on creating
                   efficient and scalable solutions. Adept at motivating both self and team members, and passionate about
-                  fostering collaboration to achieve project success.
+                  fostering collaboration to achieve project success. I have intermediate knowledge in Dutch.
                 </p>
               </label>
             </section>
@@ -112,6 +112,50 @@ const Portfolio = (props) => {
       <section>
         <div>
           <p className="section-title">Professional Experience</p>
+
+
+          <div className="section-container row">
+            <div className="left-points">
+              <div className="box-point"></div>
+            </div>
+
+            <div className="section experience">
+            <p>Senior Software Engineer II</p>
+            <div className="row">
+              <h4><span className="company-label"></span> Nike European Headquarters</h4>
+              <div className="work-period row">
+                <p>Aug 2024 - Present</p>
+                <p>&nbsp; - &nbsp;</p>
+                <p>Hilversum, Netherlands</p>
+              </div>
+            </div>
+              <div className="work-description">
+                Led privacy and security initiatives at Nike, building scalable, <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainCloud)}</span>-based solutions handling data for over 300M users. Drove GDPR compliance, optimized infrastructure with a 20% cost reduction, and developed a multilingual privacy UI simulator. Specialized in GraphQL with <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainBackEnd)}</span> and large-scale data processing during peak traffic events.
+              </div>
+              <h5>Tasks</h5>
+              <ul>
+                <li>Spearheaded development and optimization of privacy-compliant services using <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainCloud)}</span>, and GraphQL with <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainBackEnd)}</span>, enabling scalable handling of PII for over 300 million global users, especially during high-traffic events like Black Friday and seasonal sales.</li>
+
+                {(props.Technologies.MainCloud.includes("AWS")) && (<li>Led the migration from API Gateway to Application Load Balancer (ALB), achieving a 20% cost reduction and improved latency by 35% under peak loads.</li>)}
+
+                <li>Designed and deployed CI/CD pipelines in <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainDevOpsTools)}</span>, automating deployment workflows and reducing manual deployment time by ~50%, significantly boosting release velocity.</li>
+
+                <li>Ensured global compliance with GDPR, CCPA, and other regional data regulations, coordinating with legal and privacy teams to implement real-time privacy preference management and audit logging.</li>
+
+                <li>Built a multilingual Privacy Experience Simulator in <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainFrontEnd)}</span>, mimicking user experiences across countries and devices—supporting 150+ locales—used for QA and stakeholder review of the privacy notice interface.</li>
+                
+                <li>Developed and maintained scalable data pipelines using <span style={shouldHilight ? highlight : {}}>{CreateSkillSet(props.Technologies.MainCloud)}</span>, processing billions of events monthly, enabling near real-time privacy analytics and data subject access request (DSAR) support.</li>
+              </ul>
+              <label htmlFor="contact-1">
+                <div className="contact row">
+                  <p>Contact -</p>
+                  <p id="contact-1">&nbsp; Mohan Ranjitkumar(Engineering Manager) -</p>
+                  <p>&nbsp; MohanNitish.SujaRanjitkumar@nike.com</p>
+                </div>
+              </label>
+            </div>
+          </div>
+
 
           <div className="section-container row">
             <div className="left-points">
@@ -167,6 +211,14 @@ const Portfolio = (props) => {
               </label>
             </div>
           </div>
+
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
 
           <div className="section-container row">
             <div className="left-points">
@@ -257,7 +309,7 @@ const Portfolio = (props) => {
               </label>
             </div>
           </div>
-
+{/* 
           <div className="section-container row">
             <div className="left-points">
               <div className="box-point"></div>
@@ -289,7 +341,9 @@ const Portfolio = (props) => {
                 <p>&nbsp; vinodramanrayanan@gmail.com</p>
               </div>
             </div>
-          </div>
+          </div> */}
+
+
         </div>
       </section>
 
